@@ -1,0 +1,4 @@
+NUMBER = 10
+FLOAT = 1.25
+STRING = "STRING"
+
