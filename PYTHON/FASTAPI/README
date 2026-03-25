@@ -1,0 +1,46 @@
+FastAPI - Python web-framework for building RESTful APIs
+
+https://fastapi.tiangolo.com/
+
+Recommendations:
+
+PIP
+
+    python3 -m PIP --version
+    pip list
+
+Environment - isoolated from other environments on your machine
+
+CREATE A VIRTUAL ENVIRONMENT:
+
+    python -m venv fastapienv
+
+START FASTAPI ENVIRONMENT
+
+    fastapienv\Scripts\activate.bat
+
+INSTALL DEPENDENCIES INSTIDE ENVIRONMENT
+
+    pip install fastapi
+    pip install "uvicorn[standard]"
+    pip list 
+    deactivate 
+
+
+RUN FASTAPI APPLICATION
+<!-- UVICORN - WEB SERVER -->
+
+    uvicorn projectname:app --reload
+<!-- or -->
+    fastapi run script.py
+<!-- or -->
+    fastapi dev script.py
+
+FOR PYCHARM YOU MAY WANT TO CHANGE INTERPRETER
+> ADD LOCAL INTERPRETER 
+> ADD NEW WINTERPRETER 
+> ENVIRONMENT: EXISTING
+> PYTHON 3.(NEWEST) INSIDE FASTAPI ENVIRONMENT
+
+SWAGGER: CLEAN DOC
+    127.0.0.1/DOCS

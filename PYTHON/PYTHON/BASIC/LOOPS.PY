@@ -22,3 +22,14 @@ while status < 5:
     if status == 6:
         break
     print(status)
+
+
+
+# loop through dictionary
+new_dictionary = {}
+# through keys
+for x in  new_dictionary:
+    pass
+# through keys and values
+for x,y in new_dictionary.items():
+    pass
