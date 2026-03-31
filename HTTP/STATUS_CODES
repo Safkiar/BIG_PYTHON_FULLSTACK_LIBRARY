@@ -1,0 +1,35 @@
+1xx - Information Response: Request Processing
+2xx - Success: Request Successfully complete
+3xx - Redirection: Further action must be complete
+4xx - Client Errors: An error was caused by the client 
+5xx - Server Errors: An error occurred on the server 
+
+
+-------
+200: OK 
+Standard Response for a Successfull Request. Get request when data is being returned.
+
+201: CREATED
+The request has been sucessfull, creating a new resource. Used when a POST creates an entity.
+
+204: No Conent 
+The request has been successfull, did not create an entity nor return anything. Commonly used with PUT request.
+
+-------
+
+400: BAD REQUEST 
+Cannot process request due to client error. Commonly used for invalid request methods.
+
+401: UNAUTHORIZED
+Client does not have valid authentication for target resource.
+
+404: NOT FOUND
+The client request resource cannot be found.
+
+422: Unprocessable Entity
+Semantic Errors in Client Request
+
+--------
+
+500: Internal Server Error
+Generic Error Message, when an unexpected issue on the server happened.
