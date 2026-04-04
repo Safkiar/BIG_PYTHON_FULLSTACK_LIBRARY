@@ -1,0 +1,16 @@
+-- input, 0
+stdin
+
+cat < listings
+-- output, 1 
+stdout 
+
+-- error, 2 
+stderr
+
+
+
+-- store and view the output of any command
+tee 
+echo "txt" | tee filename
+echo "txt" | tee -a filename -- append

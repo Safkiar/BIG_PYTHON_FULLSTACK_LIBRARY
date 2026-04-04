@@ -1,0 +1,86 @@
+SETUP
+
+OPTION 1:  (SOFTWARE)
+
+VMWARE PLAYER
+ORACLE VIRTUAL BOX
+
+--- VIRTUAL MACHINE 
+
+OPTION 2:  (CLOUD)
+
+AWS
+GOOGLE CLOUD 
+
+--- VIRTUAL MACHINE 
+
+
+-----------------------------------------------
+Virtualbox - free and open-source hypervisor for x86 computers
+
+
+---------------------------------------
+GENERAL 
+---------------------------------------
+
+Root - account that can create, modify, delete accounts and make changes to system configuration files
+
+Lainux is case-sensitive
+
+Avoid using spaces when creating files and directories
+
+linux kernel is not OS. It is a small software within linux OS that takes commands from users and pass to system hardware
+
+Linux is cli - command line interface
+
+
+
+---------------------------------------
+ACCESS TO LINUX
+---------------------------------------
+
+1. Console
+2. Remote
+
+Console connected through VGA, HDMI, DVI
+
+Remote DESKTOP Connection - RDP
+Through address IP over the network
+
+MAC OS (Sharting)
+
+To connect via windows machine use:
+Putty Client - Load throught network windows machine by IP address
+
+Windows 10 >
+SSH bult-in client
+1. CMD
+2.      ssh -l user 111.111.1.1  (IP ADDRESS)
+
+
+-------
+NETWORK:::
+-------
+
+    ip config
+    ip a
+
+
+linux prompt:
+{username@hostname ]# 
+
+get a prompt back:
+ctrl + c
+
+
+------
+ROOT
+------
+
+Root account - account or a username 
+Root as /: - the very first directory in linux
+Root home directory: the root user account also has a directory located in /root
+
+
+
+

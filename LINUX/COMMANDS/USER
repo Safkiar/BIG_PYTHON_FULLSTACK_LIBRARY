@@ -1,0 +1,9 @@
+whoami
+hostname
+
+
+--- change passowrd 
+passwd userid
+
+--- change user 
+su -

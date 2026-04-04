@@ -1,0 +1,7 @@
+-   Regular file
+d   Directory 
+l   Link 
+c   Special file / Device file
+s   Socket 
+p   Named pipe
+b   Block device

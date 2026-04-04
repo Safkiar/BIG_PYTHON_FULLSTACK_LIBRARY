@@ -1,0 +1,14 @@
+OWNER OF A FILE: 
+- user 
+- group
+
+CHANGE FILE OWNERSHIP
+
+-- ownership
+chown 
+-- group ownership
+chgrp
+
+-- if you add to these, it will change content inside as well
+chown -R
+chgrp -R 

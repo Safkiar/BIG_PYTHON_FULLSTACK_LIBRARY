@@ -1,0 +1,4 @@
+Absoluthe path - begins with a "/". Indicates that the parth starts at the root directory
+
+Relative path - identifies a location relative to your current position
+

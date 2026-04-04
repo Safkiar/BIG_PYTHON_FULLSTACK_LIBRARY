@@ -1,0 +1,14 @@
+wildcards - char that can be used as a subsitute for any of a class of characters in a search
+
+*  - zero or more char
+?  - single char
+[] - range of char 
+
+-- remove a lot of files which starts with abc
+rm abc*
+
+-- create a range of files
+touch abc[1..9]-xyz
+
+-- list files with specific char
+ls -l ?bcd*

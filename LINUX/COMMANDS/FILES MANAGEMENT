@@ -1,0 +1,46 @@
+-- create file 
+touch filename 
+
+-- copy file 
+cp file newfilename
+-- copy directory 
+cp -R sourcefolder destinationfolder
+
+-- delete file
+rm -f filename
+-- delete directory
+rm -r dirname
+
+-- file editor mode
+vi 
+    :wq!
+    vi filename
+
+-- make directory command
+mkdir filename
+
+
+-- find a file  
+-- iterates over filesystem to locatefiles
+find
+// find . -name "filename" // in this dir
+// find / -name "filename" // where to starts searching
+
+-- where file is (mpackage package) - rpm -qa | grep mlocate || yum install mlocate
+-- no output? run as root "updatedb"
+-- prebuilt database, which should be updated
+-- locates is much faster but can be inaccurate 
+locate
+
+
+-- add a file 
+vi 
+redirect command output 
+echo "file input txt"  > filename 
+echo "another file input" >> filename 
+
+-- save content of console into folder 
+command > filename 
+
+-- read a conent of a file 
+cat filename 

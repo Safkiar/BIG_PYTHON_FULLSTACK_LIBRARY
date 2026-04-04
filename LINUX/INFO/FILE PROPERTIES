@@ -1,0 +1,48 @@
+TYPE 
+    drwxr-xr-x.
+    lrwxrwxrwx.
+    -rw-r-r--
+--- d if directory
+--- - link
+
+# of Links 
+    21
+    1
+    1
+--- number of hard links to the file 
+
+Owner
+    root
+    root
+    root
+--- who owns this file directory
+
+Group
+    root
+    root
+    root
+
+Size
+    4096
+    7
+    0
+
+Month
+    Feb
+    Feb
+    Mar
+
+Day
+    27
+    27
+    2
+
+Time
+    13:33
+    13:15
+    11:15
+
+Name
+    var
+    bin
+    testfile

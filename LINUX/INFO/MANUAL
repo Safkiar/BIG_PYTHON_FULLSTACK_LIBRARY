@@ -1,0 +1,5 @@
+-- manual for all commands
+man command
+whatis command 
+command --help 
+

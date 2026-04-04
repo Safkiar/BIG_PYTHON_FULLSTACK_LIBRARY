@@ -1,0 +1,10 @@
+flexible mechanism for file system with UNIX file permission.
+
+setfacl 
+getfacl
+
+-- add permission for user 
+setfacl -m u:user:rwx /path/to/file 
+
+-- add permission for a group 
+setfacl -m g:group:rw /path/to/file

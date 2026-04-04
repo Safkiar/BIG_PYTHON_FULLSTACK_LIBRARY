@@ -1,0 +1,20 @@
+------
+FILE SYSTEM STRUCTURE
+------
+
+/boot   - contains file that is used by the boot loeader (grub.cfg)
+/root   - root user home directory.
+/dev    - system devices (disk, cdrom...)
+/etc    - configuration files
+/bin    - everyday user commands
+/sbin   - system/filesystem commands
+/opt    - optional add-on applications
+/proc   - running processes (only in memory)
+/lib    - c programming library files needed by commands and applications
+/tmp    - directory for temporary files
+/home   - directory for user
+/var    - system logs
+/run    - system daemons that start very early (systemd, udev)
+/mnt    - mount external filesystem 
+/media  - for cdrom mounts 
+

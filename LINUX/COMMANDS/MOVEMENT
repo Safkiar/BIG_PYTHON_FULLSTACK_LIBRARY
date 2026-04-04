@@ -1,0 +1,19 @@
+
+--- change directory 
+cd /filename 
+--- previous directory
+cd ..
+
+--- print working directory
+pwd 
+
+--- list directory with properties
+ls -l 
+--- list directory
+ls
+--- list directory with inodes
+ls -li
+--- s
+ls -ltr
+--- only show specific file
+ls -l filename

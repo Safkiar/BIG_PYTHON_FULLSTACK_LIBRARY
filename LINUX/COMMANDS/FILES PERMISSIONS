@@ -1,0 +1,42 @@
+r   read 
+w   write
+x   execute 
+
+u   user 
+g   group
+o   other (everyone)
+
+0   no permission   ---
+1   execute         --x 
+2   write           -w-
+3   execute write   -wx
+4   read            r--
+5   read execute    r-x 
+6   read write      rw-
+7   read write exe  rwx
+
+digits for user group other 
+
+
+user | group | other 
+-rwxrwxrwx
+
+--change permission:
+chmod
+
+-- change permission of a group write
+chmod g-w filename
+
+-- remove read permission for everyone
+chmod a-r filename
+
+-- remove write permission for an user 
+chmod u-w filename
+
+-- add permision for an user
+chmod u+rw filename
+
+-- add read permission to everyone 
+chmod ugo+r filename 
+chmod 444 filename 
+
