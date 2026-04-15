@@ -1,0 +1,43 @@
+JSON Web Token - self contained way to securely transmit data and information between two parties using a JSON object.
+
+JWT can be digitally signed, which in return allows server to knof if JWT has been changed at all.
+
+Three seperate parts by dots
+aaa.bbb.ccc
+
+Header.Payload.Signature
+
+JWT Header consist two parts:
+alg - the algorithm for signing
+typ - specific type of token
+
+{"alg":"HS256, "typ":"JWT"}
+
+JWT Payload data contains claims
+- there are three different types of claims
+1. Registered (Predefined, recommended but not mandatory)
+- be sure that there is expiration date
+2. Public 
+3. Private
+
+{
+    "sub":"1234567890",  // sub - subject, ID of token
+    "name":"Eric Ruby",
+    "given_name":"Eric",
+    "family_name":"Roby",
+    "email":"codingwithroby@gmail.com",
+    "admin":true
+}
+
+JWT Signature - algorithm in the header to hash out the encoded header. Saved on the server that the client does not have access to.
+
+HMACSHA256(
+    base64UrlEncode(header) + "." +
+    base64UrlEncode(payload), 
+    secret
+)
+
+JSON Web Token
+eyJhbGci0iJIUzIINiIsInr5cCI61......tK5q8
+
+
