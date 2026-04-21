@@ -1,0 +1,2 @@
+uvicorn main:app --reload       | uruchomienie applikacji
+pip install "fastapi[all]       | installation of all 

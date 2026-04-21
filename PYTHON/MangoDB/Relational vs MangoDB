@@ -1,0 +1,6 @@
+DATABASE    |   DATABASE 
+TABLE       |   COLLECTION
+ROW         |   DOCUMENT
+INDEX       |   INDEX 
+JOIN        |   $lookup
+Foreign Key |   Reference
