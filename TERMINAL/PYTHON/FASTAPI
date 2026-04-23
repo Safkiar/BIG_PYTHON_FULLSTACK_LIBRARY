@@ -1,2 +1,6 @@
 uvicorn main:app --reload       | uruchomienie applikacji
 pip install "fastapi[all]       | installation of all 
+pip install fastapi==0.108.0    | specific version
+pip list                        | shows version of packages
+pip install uvicorn==0.25.0     | light fast server 
+...link/docs                    | swagger
