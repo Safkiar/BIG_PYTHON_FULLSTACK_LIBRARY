@@ -1,0 +1,10 @@
+Architektura warstwowa 
+
+Komponenty interfejsu użytkownika (UI) - API, webpage
+Warstwa logiki biznesowej - Komunikacja z UI, reguły biznesowe, przepływ 
+Warstwa bazy danych - zapisywanie i pobieranie danych 
+
+Zmiana bazy danych wymusza modyfikowanie najważniejszych
+
+UI wywołuje logikę biznesową a to wywołuję bazę danych
+

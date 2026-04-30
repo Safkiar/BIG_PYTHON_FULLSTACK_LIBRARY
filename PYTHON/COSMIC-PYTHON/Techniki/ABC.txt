@@ -1,0 +1,24 @@
+ABC - Abstrakcyjne Klasy Bazowe
+
+moduł ABC 
+
+Nie możesz utworzyć obiektu klasy, jeśli nie zaimplementujesz wszystkich wymaganych metod
+
+Tworzenie formalnych interfejsów. 
+
+from abc import ABC, abstractmethod 
+
+class Zapisywacz(ABC):
+    @abstractmethod 
+    def zapisz(self, dane: str) -> None:
+        "Każdy zapisywacz musi mieć tę metodę"
+        pass 
+
+Implementacja: 
+
+class PrawidłowyZapisywacz(Zapisywacz):
+    def zapisz(sef, dane: str) -> None:
+        pass 
+class ZlyZapisywacz(Zapisywacz):
+    def inna_metoda(self, dane: str) -> None:
+        pass 

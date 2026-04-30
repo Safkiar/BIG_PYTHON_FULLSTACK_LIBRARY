@@ -1,0 +1,15 @@
+TTD - Test Driven Development
+
+(Red-Green-Refactor)
+
+1. Test (bez przejscia)
+2. Minimal Code (z przejściem)
+3. Refaktoryzacja 
+
+Piramida testów: Zamiast End-to-End to błyskawiczne testy jednostkowe
+
+Główne narzędzie: pytest dzięki TestClient opartym na httpx
+
+Testy jednostkowe, powinny używać wzorca Repository, a nie prawdziwej bay danych.
+
+Dla React to będzie Jest i React Testing Library w testowaniu izolacji bez uruchamienia backendu w FastAPI.

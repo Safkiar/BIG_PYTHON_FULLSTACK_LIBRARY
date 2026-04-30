@@ -1,0 +1,25 @@
+Event-Driven Architecture 
+
+Wzorzec projektowy, ztereminowany przez produkcję, detekcję i konsumpcję zdarzeń.
+
+Komunikacja asynchroniczna, żeby rozluźnić powiązania.
+
+Loose Coupling.
+
+Zdarzenie [Event] - Obiekt DTO - data transfer object, jest w czasie dokonanym "UserRegistered". Zdarzenia sią niemutowalne.
+
+Producent [Publisher] - Zdarzenie jest wyświetlane. Bez oczekiwania na odpowiedź.
+
+Konsument [Subscriber] - Funkcja słuchająca zdarzeń określonego typu. Uruchamia własną logikę, czyli efekty uboczne - side effects.
+
+Szyna wiadomości [Event Bus] - Klasa w pamięci wewnątrz pplikacji lub zewnętrzny system infrastrukturalny.
+
+
+1. Odebranie danych 
+2. Repozytorium zapisuje użytkownika
+3. Domena generuje obiekt zdarzenia i wrzuca go na wewnętrzną szynęzdarzeń.
+4. React szybko zwraca HTTP.
+5. Handlery odbierają to zdarzenie i jednocześnie wysyłają maila, aktualizują cache.
+
+Jeden błąd nie wywali błędu na wszystkich funkcjach.
+

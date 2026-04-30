@@ -1,0 +1,7 @@
+Zasada odwrócenia zależności
+Dependency Inversion Principle 
+
+Wszystkie zależności (importy) w kodzię muszą wskazywać do wewnątrz, w kierunku rdzenia biznesowego (Domeny).
+
+Kod wyższego poziomu (logika biznesowa) nie może zależeć od kod  niższego poziomu (baza, sieć)
+
