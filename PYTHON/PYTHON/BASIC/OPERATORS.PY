@@ -30,3 +30,16 @@ print(x > y or x < y)
 # reverse condition
 print(not(x==y))
 
+
+"""
+Arithmetic
+"""
+
+# basic + - * /
+# ^^ %
+
+# modulo - remainder 
+# 5 % 2 = 1 
+
+
+

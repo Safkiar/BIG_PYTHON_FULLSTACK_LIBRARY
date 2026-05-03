@@ -1,4 +1,13 @@
-NUMBER = 10
-FLOAT = 1.25
-STRING = "STRING"
+Int = 10
+Float = 1.25
+Bool = True 
+Str = "STRING"
+Tuple = ()
+List = []
+Set = () 
+Dict = {}
+
+# to check type use:
+
+type(Int) 
 

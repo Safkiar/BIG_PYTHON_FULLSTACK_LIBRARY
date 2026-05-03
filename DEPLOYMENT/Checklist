@@ -1,0 +1,46 @@
+1. freeze requirements.txt
+2. define a vercel.json to configure the build
+3. define a .gitignore
+4. create a local git repo and add all the code files
+5. create a remote github repo and puish local to the remote
+6. start a new deployhment from github repo
+
+1. 
+
+pip freeze | head -n 3
+pip freeze > requirements.txt
+
+
+2. vercel.json:
+
+{
+    "builds":[
+        {
+            "src":"main.py",
+            "use":"@vercel/python"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest": "main.py"
+        }
+    ]
+}
+
+3.
+
+touch .gitignore
+
+.env
+env/
+.DS_Store
+.vscode/
+__pycache__/
+
+
+4.
+
+git init
+git add .
+git commit -m "first commit"

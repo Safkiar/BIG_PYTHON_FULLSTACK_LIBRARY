@@ -2,6 +2,7 @@
 Isolates code and do only certains aspect of it when
 this functionallity is called
 '''
+nums = [1,2]
 
 def func():
     pass
@@ -24,3 +25,15 @@ def func5(cost):
 def func6(cost):
     tax = .03
     return cost * tax
+
+
+
+'''
+Lambda - anonymous functions
+'''
+
+fuct = lambda x: x ** 3
+fuct(20)
+
+list(map(lambda x: x**3, nums))
+

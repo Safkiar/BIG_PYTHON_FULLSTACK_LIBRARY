@@ -1,0 +1,14 @@
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+class User(BaseModel):
+    name: str 
+    age: int 
+    email: Optional[EmailStr] = None 
+
+user_data = '{"name":"Alice", "age":30,"email":"alice@example.com}'
+
+user = User.model_validate_json(user_data)
+
+user.name 
+
