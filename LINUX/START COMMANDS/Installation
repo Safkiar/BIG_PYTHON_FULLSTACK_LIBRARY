@@ -1,0 +1,23 @@
+ctrl + alt + t
+
+--- refresh:
+sudo apt update && sudo apt upgrade -y
+sudo apt install git python3-pip python3-venv -y
+
+--- editors:
+sudo snap install code --classic
+sudo snap install pycharm-community --classic
+
+--- docker:
+sudo snap install docker
+
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+
+--- postman:
+sudo snap install postman
+
+--- azure:
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+az login
