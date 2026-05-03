@@ -1,0 +1,38 @@
+Warstwa logiki biznesowej = model domeny 
+
+Domena - problem, który próbujesz rozwiązać.
+
+Model - mapa procesu lub zjawiska. 
+
+Model domeny - mapa firm na temat logiki biznesowej.
+
+---
+
+Modelowanie domenu to kod najbliższy biznesu, sporo zmian i największa wartość.
+
+Obiekt wartości jest definiowany przez atrybuty. Najlepiej niech będzie niemutowalny.
+Encja ma atrybuty, które mogą zmieniać się w czasie, będąc tą samą encją.
+
+# SOLID 
+
+1. Single Responsibility Priniciple 
+
+Klasa powinna zajmować się wyłącznie jedną rzeczą
+
+2. Open/Closed Principle 
+
+Klasy powinn być otwarte na rozbudowę, ale zamknięte na modyfikację.
+
+3. Liskov Substitution Proinciple 
+
+Klasy pochodne muszą być zastępowalne przez bazowe. Przekazanie funkcji pochodnej nie powinno dać błędu ani zmiany zachowania.
+
+4. Interface Segregation Principle 
+
+Klasa nie powinna być zmuszana do implementowania metod, których nie potrzebuje.
+
+5. Dependency Inversion Principle 
+
+Moduły wysokiego poziomu nie powinny zależeć od modułów niskiego poziomu.
+
+

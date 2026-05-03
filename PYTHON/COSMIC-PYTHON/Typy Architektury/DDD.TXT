@@ -1,0 +1,30 @@
+Domain-Driven Design 
+
+Zarządzaine wysoką złożonością wokół dziedziny biznesowej (Domain).
+
+Separacja logiki biznesowej od detali infrastrukturalnych (baza, framework HTTP)
+
+Język powinien odpowiadać słownictwu używanych przez ekspertów domenowych z biznesu
+
+Encje [Entities] - Mają ID, własna, unikalna tożsamość, niezależną od ich atrybutów.
+Obiekty Wartości [Value Objects] - obiekty niemutorwalne, które nie mają ID, a ich tożsamość jest definiowana przez kombinację atrybutów. Reprezentują cechy i miary.
+Agregaty [Aggregates] - Grupa powiązanych Encji i Value Objectów. Gwanartuje niezmienniki, odczyty zachodzą z bazy danych na poziomie całego agregatu.
+Wzorzec Repository [SQL, kolekcja MongoDB]
+Architektura Warstwowa / Hexagonalna - jednokierunkowy przepłw zależności.
+
+Klient:
+- inicjacja
+-- React
+
+Delivery:
+- Odbieranie requestów, autoryzacja HTTP, walidacja
+-- FASTAPI (Routery, Endpointy) oraz Pydantic 
+
+Aplikacja 
+- zapis, transakcje, pobranie agregatu 
+-- asynchroniczny python 
+
+Domena Core:
+- I/O. Połączenie z bazą. 
+-- Repository z Motor(PyMango). Translancja python a BSON MongoDB.
+

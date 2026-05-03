@@ -1,0 +1,13 @@
+Typowanie strukturalne / behawioralne 
+
+Przy klasach bez dziedziczenia
+
+class SmsService:
+    def send_message(self, text: str)
+        print...
+
+def notify_user(service, message: str):
+    service.sent_message(message)
+
+Znaczenia nie ma typ obiektu, tylko struktura (metody i atrybuty), w momencie użycia. Jeśli obiekt posiada metodę to ją zaakceptuje i się wykona.
+

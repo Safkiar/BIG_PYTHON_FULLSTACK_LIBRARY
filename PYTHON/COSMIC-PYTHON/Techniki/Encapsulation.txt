@@ -1,0 +1,12 @@
+Hermatyzacja 
+
+1. Upraszczanie zachowania 
+2. Ukrywanie danych 
+
+Przekazujemy zadania do zidentifikowanego obiektu lub funkcji (abstrakcji)
+
+Proces zidentifkowania wieloetapowego zadania i zamknięcia go wewnątrz jednego komponentu.
+
+Ukrycie jak zadanie jest wykonywane.
+
+

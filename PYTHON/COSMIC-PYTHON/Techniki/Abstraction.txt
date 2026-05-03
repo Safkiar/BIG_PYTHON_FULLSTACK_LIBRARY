@@ -1,0 +1,34 @@
+Abstrakcja. 
+
+Efekt końcowy hermatyzacji.
+
+Definicja, co dany komponent robi, bez ujawnienia techniki jego działania.
+
+Abstrakcja jest np biblioteka requests jak requests.get()
+
+
+
+
+
+Kod o niskim poziomie abstrakcji:
+
+import json
+from urllib.request import urlopen
+from urllib.parse import urlencode
+
+params = dict(q='Sausages', format='json')
+handle = urlopen('http://api.duckduckgo.com' + '?' + urlencode(params))
+raw_text = handle.read().decode('utf8')
+parsed = json.loads(raw_text)
+
+Kod o wysokim poziomie abstrakcji:
+
+import requests 
+params = dict(q='Sausages', format='json')
+parsed = requests.get('http://api.duckduckgo.com/', params=params).json()
+
+Kod o wyższym poziomie abstrakcji: 
+import duckduckpy 
+
+for r in duckduckpy.query('sausages').related_topics:
+    print(r.first_url,' - ', r.text)
